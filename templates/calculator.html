@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+        <title>Currency calculator</title>
+    </head>
+    <body>
+        <form method="post" enctype=multipart/form-data>
+            <div class="container1">
+                <div class="container">
+                    <label for="currencies">Choose currency:</label>
+                    <select name="currencies" id="currencies">
+
+                        {% for cc in codes_list %}
+                        <option value="{{ cc }}">{{ cc }}</option>
+                        {% endfor %}
+
+                    </select>
+                    <br />
+                    <label for="quantity">Choose quantity:</label>
+                    <input name="quantity" id="quantity" type="number" min="0" oninput="validity.valid||(value='');" />
+                    <br />
+                    <input type="submit" value="Calculate" /> <br />
+                    <input type="reset" value="Clear form" />
+                </div>
+            </div>
+        </form>
+    </body>
+</html>

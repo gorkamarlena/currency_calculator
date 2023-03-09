@@ -1,0 +1,18 @@
+body {
+    text-align: center;
+    line-height: 24px;
+    background-image: url(pound.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container1 {
+    background-color: rgb(165, 162, 218);
+    height: 120px;
+    max-width: 250px;
+    margin: 15px 15px;
+    padding: 10px;
+}
+
